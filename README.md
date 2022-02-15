@@ -14,6 +14,10 @@ On [14-feb-2022] I successfully installed rails on MacOS Montery by following th
 
 4. `rbenv rehash`
 
+even if it shows again, run the following command in terminal
+
+`\curl -sSL https://get.rvm.io | bash -s stable --rails`
+
 
 ### MacOS Default Ruby
 
