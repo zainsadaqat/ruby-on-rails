@@ -2,7 +2,7 @@
 
 what our MVC acronym refers to is the way we direct traffic (with a controller) as it comes in from an external source, looks for data (monitored by the model), and is displayed for the user (through the view).
 
-On [14-feb-2022] I successfully installed rails on MacOS Montery by following these links 1. [GoRails](https://gorails.com/setup/osx/12-monterey#rails) 2. [YouTube](https://www.youtube.com/watch?v=jT_SPPPhRBk&t=202s&ab_channel=ChrisLam)
+On [14-feb-2022] I successfully installed rails on MacOS Montery by following these links 1. [GoRails](https://gorails.com/setup/osx/12-monterey#rails) 2. [YouTube](https://www.youtube.com/watch?v=jT_SPPPhRBk&t=202s&ab_channel=ChrisLam) 3. [StackOverflow](https://stackoverflow.com/questions/24736204/rbenv-cant-change-global-ruby-version)
 
 ### MacOS Default Ruby
 
