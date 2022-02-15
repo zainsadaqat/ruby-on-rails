@@ -59,3 +59,6 @@ for teams with complex project environments (for example, Ruby, Node, Redis, and
 all in one project) but Docker adds complexity. Finally, simply install Ruby with Homebrew 
 if you are building only one project with Ruby (for example, if you are a student learning Ruby).
 ```
+
+#### Create a new Rails Project with PostgreSQL
+`rails new <project_name> -d <database_name>`
