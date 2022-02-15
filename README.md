@@ -4,6 +4,17 @@ what our MVC acronym refers to is the way we direct traffic (with a controller) 
 
 On [14-feb-2022] I successfully installed rails on MacOS Montery by following these links 1. [GoRails](https://gorails.com/setup/osx/12-monterey#rails) 2. [YouTube](https://www.youtube.com/watch?v=jT_SPPPhRBk&t=202s&ab_channel=ChrisLam) 3. [StackOverflow](https://stackoverflow.com/questions/24736204/rbenv-cant-change-global-ruby-version)
 
+### [Solved] Rails not Installed Error in MacOS Monterey
+
+1. `export PATH="$HOME/.rbenv/bin:$PATH"`
+
+2. `eval "$(rbenv init -)"`
+
+3. `gem install rails`
+
+4. `rbenv rehash`
+
+
 ### MacOS Default Ruby
 
 ```
