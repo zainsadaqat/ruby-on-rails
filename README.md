@@ -2,6 +2,16 @@
 
 what our MVC acronym refers to is the way we direct traffic (with a controller) as it comes in from an external source, looks for data (monitored by the model), and is displayed for the user (through the view).
 
+### MacOS Default Ruby
+
+```
+you should know that macOS comes with a system Ruby pre-installed. 
+MacOS Monterey includes Ruby 2.6.8 which is not the newest version. 
+If you use the system Ruby you'll need root access (sudo) to install gems (introducing a security risk). 
+And you'll end up with a cluster of (sometimes incompatible) gems that can't be easily removed 
+to restore your system to a clean state. Please use either asdf, frum, or Homebrew.
+```
+
 ```
 If you don't need a version manager, install Ruby using the Homebrew package manager. 
 Use this approach if you are only building a casual project that you will not maintain, 
