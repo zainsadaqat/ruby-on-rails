@@ -34,3 +34,12 @@ Rbenv and rvm are also popular as Ruby version managers. Sam Stephenson's rbenv 
 than frum or chruby (it installs extra “shim” files). RVM was once the most popular of Ruby version managers 
 but its additional features (gemsets) are no longer needed and add unnecessary complexity.
 ```
+
+
+### What are rvm, rbenv, chruby, and asdf?
+```
+Asdf, chruby, rbenv, or rvm are software version managers that allow you to switch among Ruby versions 
+so you can work on applications that use different versions of Ruby. Asdf manages multiple languages. 
+Chruby is the lightest and simplest of Ruby version managers. Rbenv is popular but a little complicated. 
+RVM is the oldest Ruby version manager with some extra (and now superfluous) features.
+```
