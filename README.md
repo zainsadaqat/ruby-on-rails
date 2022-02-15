@@ -43,3 +43,17 @@ so you can work on applications that use different versions of Ruby. Asdf manage
 Chruby is the lightest and simplest of Ruby version managers. Rbenv is popular but a little complicated. 
 RVM is the oldest Ruby version manager with some extra (and now superfluous) features.
 ```
+
+### Which is best? rvm vs rbenv vs chruby vs asdf?
+```
+Version managers such as asdf, chruby, rbenv, or rvm allow you to switch among Ruby versions 
+so you can work on applications that use different versions of Ruby. Asdf is good for managing multiple languages. 
+Install Ruby with asdf if you are developing Rails web applications (which require Ruby, Node, and Yarn) 
+or if you are using multiple languages such as Ruby, Node, and Python. Install Ruby with chruby or rbenv 
+if you are just managing Ruby versions (chruby is simpler). Some developers use rvm, 
+but rvm has complexity and features that are superfluous with the latest versions of Ruby 
+(we longer need to manage gemsets because we have Bundler with Ruby). Some developers use Docker (or Nix) 
+for teams with complex project environments (for example, Ruby, Node, Redis, and PostgreSQL 
+all in one project) but Docker adds complexity. Finally, simply install Ruby with Homebrew 
+if you are building only one project with Ruby (for example, if you are a student learning Ruby).
+```
