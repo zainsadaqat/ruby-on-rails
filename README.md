@@ -21,6 +21,13 @@ You can easily remove Ruby after installing with Homebrew (and re-install a newe
 Don't install Ruby with Homebrew if you need to switch among Ruby versions (use asdf or frum in this case).
 ```
 
+### asdf, frum, and chruby
+```
+Asdf and frum are software version managers. Asdf is a good choice because it is a universal version manager 
+that installs and manages Ruby, JavaScript, Python, Elixir, and several other languages. Frum is simple and fast, 
+working only with Ruby. Chruby works only for Ruby but (unlike Frum) requires installation of a separate installer utility.
+```
+
 ### rbenv and rvm
 ```
 Rbenv and rvm are also popular as Ruby version managers. Sam Stephenson's rbenv has a more complex implementation 
