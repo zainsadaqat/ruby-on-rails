@@ -1,4 +1,4 @@
-# Ruby on Rails (MVC Framework)
+# Ruby on Rails
 
 what our MVC acronym refers to is the way we direct traffic (with a controller) as it comes in from an external source, looks for data (monitored by the model), and is displayed for the user (through the view).
 
@@ -126,4 +126,8 @@ creates seven different routes in your application, all mapping to the Photos co
 ### Controller
 
 Controllers do exactly what the name implies: they control. Your controller will be the central hub of all the activity happening in your app. It gathers whatever data you need, applies any necessary logic to that data, and then offers that data to your view. Despite how much controllers do, or maybe because of it, it's best to keep in mind that we want our controller to be as clean and thin as possible.
+
+### Parameters
+
+You will probably want to access data sent in by the user or other parameters in your controller actions. There are two kinds of parameters possible in a web application. The first are parameters that are sent as part of the URL, called query string parameters. The query string is everything after "?" in the URL. The second type of parameter is usually referred to as POST data. This information usually comes from an HTML form which has been filled in by the user. It's called POST data because it can only be sent as part of an HTTP POST request. Rails does not make any distinction between query string parameters and POST parameters, and both are available in the params hash in your controller:
 
