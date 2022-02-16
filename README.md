@@ -2,23 +2,6 @@
 
 what our MVC acronym refers to is the way we direct traffic (with a controller) as it comes in from an external source, looks for data (monitored by the model), and is displayed for the user (through the view).
 
-On [14-feb-2022] I successfully installed rails on MacOS Montery by following these links 1. [GoRails](https://gorails.com/setup/osx/12-monterey#rails) 2. [YouTube](https://www.youtube.com/watch?v=jT_SPPPhRBk&t=202s&ab_channel=ChrisLam) 3. [StackOverflow](https://stackoverflow.com/questions/24736204/rbenv-cant-change-global-ruby-version)
-
-### [Solved] Rails not Installed Error in MacOS Monterey
-
-1. `export PATH="$HOME/.rbenv/bin:$PATH"`
-
-2. `eval "$(rbenv init -)"`
-
-3. `gem install rails`
-
-4. `rbenv rehash`
-
-even if it shows again, run the following command in terminal
-
-`\curl -sSL https://get.rvm.io | bash -s stable --rails`
-
-
 ### MacOS Default Ruby
 
 ```
@@ -75,5 +58,45 @@ all in one project) but Docker adds complexity. Finally, simply install Ruby wit
 if you are building only one project with Ruby (for example, if you are a student learning Ruby).
 ```
 
+On [14-feb-2022] I successfully installed rails on MacOS Montery by following these links 1. [GoRails](https://gorails.com/setup/osx/12-monterey#rails) 2. [YouTube](https://www.youtube.com/watch?v=jT_SPPPhRBk&t=202s&ab_channel=ChrisLam) 3. [StackOverflow](https://stackoverflow.com/questions/24736204/rbenv-cant-change-global-ruby-version)
+
+### [Solved] Rails not Installed Error in MacOS Monterey
+
+1. `export PATH="$HOME/.rbenv/bin:$PATH"`
+
+2. `eval "$(rbenv init -)"`
+
+3. `gem install rails`
+
+4. `rbenv rehash`
+
+if it still shows again, run the following command in terminal
+
+`\curl -sSL https://get.rvm.io | bash -s stable --rails`
+
 #### Create a new Rails Project with PostgreSQL
 `rails new <project_name> -d <database_name>`
+
+`get “pages/home”, to: pages#home”`
+
+`rake routes`
+
+`resources :users`
+
+`resources :users, only: [:index, :new, :create]`
+
+`resources :users, :books, :messages`
+
+#### Controller Namespace and Routing
+
+Rails allows you to organize groups of controllers under a namespace with a keyword “namespace” during routing. For instance grouping Articles and Comments Controllers under Admin controller.
+
+```
+namespace :admin do 
+ resources :articles, :comments
+end
+```
+
+To get to the articles on your browser you have to prefix it with admin , that is
+
+`/admin/articles`
