@@ -163,3 +163,7 @@ class ClientsController < ApplicationController
 end
 ```
 
+### Generate a Controller in ROR
+
+`rails generate controller <controller_name>`
+
