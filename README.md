@@ -179,4 +179,8 @@ A request spec need not be overly complicated and as you will see, does just wha
 
 3. create `*_spec.rb` file
 
+### Database Connection and ORM
+
+
+
 
