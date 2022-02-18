@@ -177,6 +177,6 @@ A request spec need not be overly complicated and as you will see, does just wha
 
 2. Create requests folder inside of spec folder
 
-3. create *_spec.rb file
+3. create `*_spec.rb` file
 
 
