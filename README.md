@@ -171,3 +171,12 @@ end
 
 A request spec need not be overly complicated and as you will see, does just what the name implies. By sending a request to a URL we can expect the response to either render a view or redirect us. If your controller action redirects the user, and your request spec follows that redirect, it will ultimately still expect some view to be rendered. That's all it takes. At the end of the day, your request spec just want to make sure that your URL route is rendering the correct view.
 
+### Test Controller
+
+1. Install `rspec-rails` gem
+
+2. Create requests folder inside of spec folder
+
+3. create *_spec.rb file
+
+
