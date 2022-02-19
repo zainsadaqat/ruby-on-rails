@@ -181,6 +181,8 @@ A request spec need not be overly complicated and as you will see, does just wha
 
 ### Database Connection and ORM
 
+In order to create and maintain a database that is connected to your Rails app, you should always use migrations.
+
 `rails generate migration add_column_to_users name:string`
 
 
