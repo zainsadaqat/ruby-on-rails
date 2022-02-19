@@ -181,6 +181,6 @@ A request spec need not be overly complicated and as you will see, does just wha
 
 ### Database Connection and ORM
 
-
+`rails generate migration add_column_to_users name:string`
 
 
