@@ -207,3 +207,10 @@ end
 `rails generate migration add_column_to_users name:string`
 
 
+### Create a Table
+
+If the migration name is of the form "CreateXXX" and is followed by a list of column names and types then a migration creating the table XXX with the columns listed will be generated. For example:
+
+`bin/rails generate migration CreateProducts name:string part_number:string`
+
+
