@@ -183,6 +183,27 @@ A request spec need not be overly complicated and as you will see, does just wha
 
 In order to create and maintain a database that is connected to your Rails app, you should always use migrations.
 
+#### Migrations
+
+Migrations are a convenient way to alter your database schema over time in a consistent way. They use a Ruby DSL so that you don't have to write SQL by hand, allowing your schema and changes to be database independent.
+
+You can think of each migration as being a new 'version' of the database. A schema starts off with nothing in it, and each migration modifies it to add or remove tables, columns, or entries. Active Record knows how to update your schema along this timeline, bringing it from whatever point it is in the history to the latest version. Active Record will also update your db/schema.rb file to match the up-to-date structure of your database.
+
+Here's an example of a migration:
+
+```
+class CreateProducts < ActiveRecord::Migration[7.0]
+  def change
+    create_table :products do |t|
+      t.string :name
+      t.text :description
+
+      t.timestamps
+    end
+  end
+end
+```
+
 `rails generate migration add_column_to_users name:string`
 
 
